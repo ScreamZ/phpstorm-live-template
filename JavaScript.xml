@@ -1,0 +1,39 @@
+<templateSet group="JavaScript">
+  <template name="iife" value="// IIFE - Immediately Invoked Function Expression Pattern&#10;(function ($YOURCODE$) {&#10;    $YOURCODE$(window.jQuery, window, document);&#10;}(function ($, window, document) {&#10;        $(function () {&#10;            // DOM is ready !&#10;            $END$&#10;        });&#10;        &#10;        // Other methods&#10;&#10;    }&#10;));" description="Pattern : Immediately Invoked Function Expression" toReformat="true" toShortenFQNames="true">
+    <variable name="YOURCODE" expression="" defaultValue="&quot;yourcode&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="Module.new" value="var $GLOBAL_NAMESPACE$ = $GLOBAL_NAMESPACE$ || {};&#10;$GLOBAL_NAMESPACE$.$MODULE_NAME$ = (function ($, ns) {&#10;&#10; // Initialization&#10;    ns.init = function () {&#10;        $END$&#10;    }&#10;    return ns;&#10;})(jQuery, {});" description="New Javascript Module" toReformat="true" toShortenFQNames="true">
+    <variable name="GLOBAL_NAMESPACE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="Validator.new.rule" value=" jQuery.validator.addMethod(&quot;$RULE_NAME$&quot;, function (value, element) {&#10;            return this.optional(element) || $REGEXP$.test(value);&#10;        }, '$GENERIC_ERROR_MESSAGE$');" description="Create new jQuery validator rules" toReformat="true" toShortenFQNames="true">
+    <variable name="RULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REGEXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GENERIC_ERROR_MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="conslog" value="console.log($END$);" description="Console.log shortchut for javascript" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,16 @@
+<templateSet group="HostedLibrary">
+  <template name="importJQuery" value="&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;" description="Import JQuery from Google Hosted Libraries" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="importAngularJS" value="&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js&quot;&gt;&lt;/script&gt;" description="Import AngularJS from Google Hosted Libraries" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
